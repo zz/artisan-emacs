@@ -1,0 +1,3 @@
+[submodule "vendors/org-jekyll-mode"]
+	path = vendors/org-jekyll-mode
+	url = http://github.com/jsuper/org-jekyll-mode.git
