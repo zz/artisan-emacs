@@ -1,0 +1,18 @@
+* My Emacs configuration
+  I have re-organized my Emacs configuration. The directory structure
+  is inspired by *bbatsov/prelude*. 
+
+** core
+   All files in this directory is the artisan-emacs core files,
+   include basic ui settings, module settings, packages files.
+
+** modules
+   This folder stores all custom setting files for each plugin.
+
+** vendors
+   Third-party plugins which not existed in melpa package repository.
+
+* Auto activating setting files when major mode loaded
+  
+  As we know, too many settings will cause our emacs start very
+  slow. 
