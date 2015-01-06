@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: blog-post
+# key: blog-post
+# binding: C-c n p
+# --
+#+TITLE: $1
+#+DATE: `(format-time-string "%Y-%m-%d")`
+
+$0

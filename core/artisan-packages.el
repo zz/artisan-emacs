@@ -6,7 +6,7 @@
 
 
 (defvar artisan-packages
-  '(smartparens zenburn-theme rainbow-mode diminish multiple-cursors)
+  '(smartparens zenburn-theme rainbow-mode diminish multiple-cursors yasnippet)
   "Basic packages for artisan-emacs")
 
 (defvar artisan-auto-install-alist

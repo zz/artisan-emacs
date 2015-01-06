@@ -5,6 +5,8 @@
 (require 'iimage)
 (require 'ox-latex)
 (require 'ox-html)
+(require 'ox-md)
+(require 'artisan-org-blog)
 ;;; stock org-mode need the latest htmlize version > 1.3
 (artisan-require-package 'htmlize)
 
@@ -84,6 +86,7 @@ Then the ouput file will output to that folder"
         ,(artisan-make-org-latex-processor "xelatex")))
 
 (add-hook 'org-mode-hook 'artisan-org-defaults)
+
 (provide 'artisan-org)
 
 ;; artisan-org.el ends here

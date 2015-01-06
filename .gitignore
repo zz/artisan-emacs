@@ -6,3 +6,6 @@ auto-save-list/
 recentf
 vendors/
 packages/
+eshell/
+url/
+tramp

@@ -70,18 +70,19 @@
 
 ;;; encoding setting
 (set-language-environment "UTF-8")
-;;(setq-default locale-coding-system 'utf-8)
+(setq-default locale-coding-system 'utf-8)
 (setq-default default-terminal-coding-system 'utf-8)
-;;(setq-default default-file-name-coding-system 'utf-8)
-;;(setq-default default-buffer-file-coding-system 'utf-8)
+(setq-default default-file-name-coding-system 'utf-8)
+(setq-default default-buffer-file-coding-system 'utf-8)
 ;;; setting locale and coding
-(set-selection-coding-system 'utf-8)
+;;(set-selection-coding-system 'utf-8)
 (prefer-coding-system 'gb18030)
 (prefer-coding-system 'utf-8)
 ;;; Enable CJK text paste from clipbord
 (set-clipboard-coding-system 'euc-cn)
 
 (require 'artisan-mode)
+(require 'artisan-yasnippet)
 (artisan-global-mode +1)
 
 (provide 'artisan-editor)
