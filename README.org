@@ -11,8 +11,3 @@
 
 ** vendors
    Third-party plugins which not existed in melpa package repository.
-
-* Auto activating setting files when major mode loaded
-  
-  As we know, too many settings will cause our emacs start very
-  slow. 
