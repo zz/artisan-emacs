@@ -25,32 +25,34 @@
   "
 <div class=\"site-nav\">
   <a href=\"/\">HOME</a>
-  |
-  <a href=\"/about.html\">ABOUT</a>
 </div>
 "
   "Html preamble of the generated fils")
 
 (defvar org-blog-html-postamble
   "
+<div id=\"ds-thread\" class=\"ds-thread\"></div>
+
 <div class=\"contact\">
   <p>
     Github: <br />
-    新浪微博: <br />
-    Google Plus: <br />
+    Google+: <br />
   </p>
 </div>
 <div class=\"contact\">
   <p>
     <a href=\"https://github.com/jsuper\">github.com/jsuper</a><br />
-    <a href=\"http://weibo.com/u/2041600541\">@我去年买了个秤砣</a><br />
-    <a href=\"https://plus.google.com/u/0/\">+ling.java</a><br />
+    <a href=\"https://plus.google.com/+LingTang\">+Ling Tang</a><br />
   </p>
 </div>
 "
   "Html postamble of the generated files")
 
-(defvar org-blog-common-style-link "<link rel=\"stylesheet\" href=\"/static/style/main.css\">"
+(defvar org-blog-common-style-link
+  "
+<link rel=\"stylesheet\" href=\"/static/style/main.css\" type=\"text/css\"/>
+<script type=\"text/javascript\" src=\"/static/js/jquery-1.11.2.min.js\"></script>
+<script type=\"text/javascript\" src=\"/static/js/common.js\"></script>"
   "Stylesheet files of your blog")
 
 (defun org-publish-org-custom-sitemap (project &optional sitemap-filename)
@@ -132,9 +134,10 @@ for our blog. This function will call default publish function `org-publish-org-
      :auto-sitemap t
      :site-title ,site-name
      :sitemap-filename "sitemap.org"
+     :sitemap-sort-files anti-chronologically
      :sitemap-function org-publish-org-custom-sitemap
      :sitemap-sans-extension t
-     :sitemap-sort-files anti-chronologically ;;this will sort the source files by creating time.
+     :sitemap-sort-folders last
      :sitemap-title "Sitemap")
     ("blog-static"
      :base-directory ,static-file-directory

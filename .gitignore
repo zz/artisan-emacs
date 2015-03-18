@@ -9,3 +9,4 @@ packages/
 eshell/
 url/
 tramp
+/server/
